@@ -1,0 +1,55 @@
+.progress-wrapper {
+  width: 100%;
+  height: 45px;
+  margin: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 1rem;
+}
+
+.progress-bar {
+  height: 5px;
+  width: var(--pb-width, 100px);
+  background-image: -webkit-linear-gradient(
+    left,
+    var(--primary) 0%,
+    var(--primary) 50%,
+    var(--secondary) 50.001%,
+    var(--secondary) 100%
+  );
+  background-size: 200%;
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+  border-radius: 99px;
+  animation-timing-function: linear;
+  animation-duration: var(--pb-duration);
+  cursor: pointer;
+}
+
+.progress-bar:hover {
+  opacity: 0.5;
+}
+
+.progress-bar:active {
+  opacity: 0.5;
+}
+
+.progress-bar.active {
+  animation-name: Loader;
+  animation-play-state: running;
+}
+
+.progress-bar.passed {
+  background-position: 0 0;
+}
+
+@keyframes Loader {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}

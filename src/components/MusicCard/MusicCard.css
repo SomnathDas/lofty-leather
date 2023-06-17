@@ -1,0 +1,17 @@
+.wrapper-bg-full {
+  background-color: unset;
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper-bg-full {
+    background-color: var(--bg-color-dark);
+  }
+}
+
+.wrapper-bg-card {
+  background-color: var(--bg-color-dark);
+}
+
+.play-pause-btn:hover {
+  background-color: var(--primary);
+}

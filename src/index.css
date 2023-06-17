@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;200;300;400&family=Oswald:wght@400;600;700&family=Poppins:wght@100;200;300;400;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-color-dark: #000f08;
+  --fg-color-text: #ffffff;
+}
+
+body {
+  background-color: var(--bg-color-dark, #000f08);
+  color: var(--fg-color-text, #ffffff);
+}
+
+html {
+  font-family: "JetBrains Mono", monospace;
+}
